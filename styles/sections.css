@@ -1,0 +1,135 @@
+section {
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(330px, 1fr));
+        gap: 24px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+#gallery {
+    grid-area: projects;
+    min-height: 700px;
+    align-self: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.card {
+    max-width: 100%;
+    height: auto;
+    padding: 12px;
+    background-color: var(--gray-400);
+    border-radius: 8px;
+    justify-content: start;
+    text-align: left;
+    border: 1px solid var(--gray-400);
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    img {
+        border-radius: 8px;
+        position: relative;
+    }
+}
+
+.card-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 4px;
+
+    .pill {
+        justify-self: end;
+        padding: 1px 6px;
+        border-radius: 50px;
+        background-color: var(--gray-500);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pill-container {
+        justify-self: end;
+        align-self: center;
+        display: flex;
+        column-gap: 1px;
+    }
+
+    h3 {
+        justify-self: start;
+        align-self: center;
+    }
+
+    p {
+        grid-column: 1/3;
+    }
+
+}
+
+.card:hover {
+    border: 1px solid var(--gray-200);
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap8 {
+    gap: 20px;
+    justify-content: left;
+}
+
+.gap50 {
+    row-gap: 50px;
+}
+
+.margin8 {
+    margin-bottom: 8px;
+}
+
+.grid-flow {
+    grid-auto-flow: column;
+}
+
+.grid-flow-row {
+    grid-auto-flow: row;
+}
+
+#services {
+    grid-area: services;
+    background-color: var(--gray-600);
+    padding-block: 88px 120px;
+    justify-content: center;
+
+    img {
+        height: 48px;
+        width: 48px;
+        align-self: start;
+    }
+
+    .service-card {
+        border: 2px solid var(--gray-500);
+        border-radius: 12px;
+        width: 280px;
+        height: 155px;
+        padding: 20px;
+        align-items: start;
+        row-gap: 20px;
+    }
+
+    .card-text {
+        align-items: start;
+        row-gap: 8px;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+

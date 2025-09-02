@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid {
+        display: grid;
+    }
+
+    .grid-flow-col {
+        grid-auto-flow: column;
+    }
+
+    .card {
+        height: 280px;
+        width: 330px;
+        border: 1px solid black;
+    }
+
+    .container {
+        max-width: 1280px;
+        padding-inline: 32px;
+        margin-inline: auto;   
+}
+
+.galery {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+    main {
+        margin-block: 40px;
+        row-gap: 80px;
+        column-gap: 32px;
+
+
+        grid-template-areas:   
+        "header"
+        "section"
+        "div"
+        "footer";
+        border: 1px solid red;
+    }
+
+    header {
+        grid-area: header;
+        border: 1px solid blue;
+    }
+
+    section {
+        grid-area: section;
+        width: 100%;
+    }
+</style>
+<body>
+    <main class="container grid">
+        <header>
+            <div class="info">
+                <p>subtitutlo</p>
+                <h1>nome</h1>
+            </div>
+            <div class="tags">
+                <a href="">nome</a>
+                <a href="">nome</a>
+                <a href="">nome</a>
+                <a href="">nome</a>
+                <a href="">nome</a>
+                <a href="">nome</a>
+            </div>
+            <div class="icon">
+                icone de seta
+            </div>
+        </header>
+        <section>
+            <h1>titulo da seção</h1>
+            <div class="grid grid-flow-col galery">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

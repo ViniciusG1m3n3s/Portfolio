@@ -1,0 +1,43 @@
+#contact {
+    background-image: url("/assets/images/Background_Contacts.png");
+    background-size: cover;
+    background-position: center;
+    grid-area: contact;
+    gap: 48px;
+
+
+    .socials {
+        gap: 16px;
+        padding-bottom: 200px;
+    }
+
+    .social-btn {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        height: 68px;
+        background-color: var(--gray-400);
+        padding: 24px 20px;
+        border-radius: 8px;
+        border: 2px solid var(--gray-500);
+        gap: 12px;
+        cursor: pointer;
+
+        h3 {
+            margin-right: auto;
+        }
+
+    }
+
+    .social-btn:hover span path {
+        fill: var(--blue);
+        transition: all 0.5s ease;
+    }
+
+    .social-btn:hover {
+        border: 2px solid var(--blue);
+        transition: all 0.5s ease;
+    }
+
+}

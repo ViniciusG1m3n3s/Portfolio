@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray-500);
+}
+
+:root {
+    /* Definindo as variáveis das fontes */
+    --asap: "Asap", sans-serif;
+    --incosolata: "Inconsolata", monospace;
+    --maven-pro: "Maven Pro", sans-serif;
+
+    /* 
+    O shorthand font segue a ordem:
+        1. font-style (opcional)
+        2. font-variant (opcional)
+        3. font-weight (opcional)
+        4. font-size (obrigatório)
+        5. line-height (opcional, quando presente deve usar a sintaxe font-size/line-height)
+        6. font-family (obrigatório) 
+    */
+
+    /* Asap */
+    --title-lg: 600 56px/120% var(--asap);
+    --title-md: 600 24px/120% var(--asap);
+    --title-sm: 600 16px/120% var(--asap);
+
+    /* Inconsolata */
+    --subtitle: 400 20px/120% var(--incosolata);
+
+    /* Maven Pro */
+    --text-md: 400 16px/140% var(--maven-pro);
+    --text-sm: 400 14px/140% var(--maven-pro);
+
+    /* Definindo as variáveis das cores do projeto */
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+    --gray-100: #E2E4E9;
+    --gray-200: #C0C4CE;
+    --gray-300: #878EA1;
+    --gray-400: #292C34;
+    --gray-500: #16181D;
+    --gray-600: #0D0E11;
+}
+
+.text-md {
+    font: var(--text-md);
+    color: var(--gray-200);
+}
+
+.title-sm {
+    font: var(--title-sm);
+}
+
+.color-red {
+    color: var(--red);
+}
+
+.color-purple {
+    color: var(--purple);
+}
+
+.html path {
+    fill: var(--red);
+}
+
+.css path {
+    fill: var(--blue);
+}
+
+.react path {
+    fill: var(--blue);
+}
+
+.javascript path {
+    fill: var(--yellow);
+}
+
+.node path {
+    fill: var(--green);
+}
+
+.github path {
+    fill: var(--gray-200);
+}
+
+h1 {
+    font: var(--title-lg);
+}
+
+h2 {
+    font: var(--h2);
+}
+
+h3 {
+    font: var(--h3);
+}
+
+.title-md {
+    font: var(--title-md);
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gray-200 {
+    color: var(--gray-200);
+}
+
+.gray-300 {
+    color: var(--gray-300);
+}
+
+.container {
+    padding-inline: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.subtitle {
+    font: var(--subtitle);
+}
+
+.text-sm {
+    font: var(--text-sm);
+}
+
+.margin-top-20 {
+    padding-block: 20px;
+}
+
+.col-gap-80 {
+    column-gap: 80px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-gap-80 {
+    row-gap: 80px;
+}
+
+.row-gap-20 {
+    row-gap: 30px;
+}
+
+.max-lines-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+}
+
+.gap50 {
+    row-gap: 50px;
+}
+
+.info {
+    padding-top: 240px
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "info"
+    "projects"
+    "services"
+    "contact";
+    color: var(--gray-100);
+    text-align: center;
+    position: relative;
+}
